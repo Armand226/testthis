@@ -24,7 +24,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: azure/login@v1
+      - run: azure/login@v1
          env:|
            client_id = ${{ secrets.CLIENT_ID }}
            client_secret = ${{ secrets.CLIENT_SECRET }}
